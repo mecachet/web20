@@ -7,35 +7,120 @@
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <div>
-      <table style="width: 100%">
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>email</th>
-          <th>Personal ID</th>
-          <th>Mobile number</th>
-          <th>Zip</th>
-          <th>Gender</th>
-          <th>Actions</th>
-        </tr>
-        <tr>
-          <td id="user-id"></td>
-          <td id="user-name"></td>
-          <td id="user-surname"></td>
-          <td id="user-email"></td>
-          <td id="user-personal"></td>
-          <td id="user-mobile"></td>
-          <td id="user-zip"></td>
-          <td id="user-gender"></td>
-          <td id="user-actions">
-            <button class="button-1">Edit</button>
-            <button class="button-2">Delete</button>
-          </td>
-        </tr>
-      </table>
-    </div>
+    <button class="btn" id="open-reg-form">New User</button>
+    <section>
+      <div class="modal" id="reg-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3></h3>
+            <button class="btn delete modal-close">X</button>
+          </div>
+          <div class="modal-body">
+            <form class="form" id="reg" action="#" method="#">
+              <input id="user_id" type="hidden" placeholder="" value="" />
+              <div class="input-field">
+                <label for="user_name">Enter User Name</label>
+                <input
+                  type="text"
+                  id="user_name"
+                  placeholder="user name"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label for="user_surname">Enter User Surname</label>
+                <input
+                  type="text"
+                  id="user_surname"
+                  placeholder="user surname"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_phone">Enter phone number</label>
+                <input
+                  type="number"
+                  id="user_phone"
+                  placeholder="phone number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_personal-id">Enter personal id</label>
+                <input
+                  type="number"
+                  id="user_personal-id"
+                  placeholder="personal id"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_email">Enter Email</label>
+                <input
+                  type="email"
+                  id="user_email"
+                  placeholder="email"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_zip-code">Enter zip code</label>
+                <input
+                  type="text"
+                  id="user_zip-code"
+                  placeholder="zip code"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_gender">Enter gender</label>
+                <input
+                  type="text"
+                  id="user_gender"
+                  placeholder="gender"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <button class="btn" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <table class="table" border="1">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Personal ID</th>
+        <th>Mobile Number</th>
+        <th>ZIP</th>
+        <th>Gender</th>
+        <th>Actions</th>
+        <th>Actions</th>
+      </tr>
+      <tr>
+        <td>info</td>
+        <td>info</td>
+        <td>info</td>
+        <td>info</td>
+        <td>info</td>
+        <td>info</td>
+        <td>info</td>
+        <td><button class="button edit" id="editBtn">Edit</button></td>
+        <td><button class="button delete" id="deleteBtn">Delete</button></td>
+      </tr>
+    </table>
+
     <script src="src/js/app.js"></script>
   </body>
 </html>
